@@ -1,0 +1,17 @@
+{
+  "name": "vacilobot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord-speech-recognition": "^2.1.0",
+    "ffmpeg-static": "^4.4.0",
+    "say": "^0.16.0",
+    "talkify-tts": "^3.9.0"
+  }
+}
