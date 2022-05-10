@@ -2,7 +2,7 @@ const { Client, Intents } = require("discord.js");
 const { joinVoiceChannel, createAudioPlayer,createAudioResource } = require("@discordjs/voice");
 const { addSpeechEvent } = require("discord-speech-recognition");
 const audioPathVacilao = '/home/guilherme/vacilobot/9ab7ebd0-2d49-11ec-a28e-0732c6e2361e.mp3';
-const audioPathOtario = '/home/guilherme/vacilobot/3dab7680-2d55-11ec-b279-218c1da8b05e.mp3';
+const audioPath = '/home/guilherme/vacilobot/3dab7680-2d55-11ec-b279-218c1da8b05e.mp3';
 let connection = null;
 const player = createAudioPlayer();
 
@@ -49,7 +49,7 @@ client.on("speech", (msg) => {
       play(audioPathVacilao);
     }
     else if(text.includes("HOJE") || text.includes("OXI") || text.includes("UÉ") || text.includes("EITA") || text.includes("UAI") || text.includes("CARACA")){
-      play(audioPathOtario);
+      play(audioPath);
     }
   }
 });
